@@ -18,9 +18,9 @@ docker-compose up
 
 In development mode, the source code is mounted from the host. You can see any changes you made in the sources by simply restarting the container.
 
-To start the service: 
+To start the service:
 
-```shell 
+```shell
 docker-compose -f docker-compose.development.yml up
 ```
 
