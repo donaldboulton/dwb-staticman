@@ -6,7 +6,7 @@
   },
   "port": 8094,
   "akismet": {
-    "site": "https://test.dwb-staticman.net",
+    "site": "https://test.donaldboulton.github.io/dwb-staticman/",
     "apiKey": "1q2w3e4r5t6y7u8i9o0p"
   }
 }

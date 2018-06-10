@@ -23,7 +23,7 @@ You can download and run the Staticman API on your own infrastructure, or you ca
 
 - Clone the repository and install the dependencies via npm.
 
-  ```
+  ```yaml
   git clone git@github.com:eduardoboucas/staticman.git
   cd staticman
   npm install
@@ -31,7 +31,7 @@ You can download and run the Staticman API on your own infrastructure, or you ca
 
 - Create a development config file from the sample file.
 
-  ```
+  ```yaml
   cp config.sample.json config.development.json
   ```
 
@@ -39,7 +39,7 @@ You can download and run the Staticman API on your own infrastructure, or you ca
 
 - Start the server.
 
-  ```
+  ```html
   npm start
   ```
 
@@ -53,7 +53,7 @@ Staticman runs as a bot using a GitHub account, as opposed to accessing your acc
 
 To add Staticman to a repository, you need to add the bot as a collaborator with write access to the repository and ask the bot to accept the invite by firing a `GET` request to this URL:
 
-```
+```html
 http://your-staticman-url/v2/connect/GITHUB-USERNAME/GITHUB-REPOSITORY
 ```
 

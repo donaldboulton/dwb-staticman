@@ -1,14 +1,15 @@
-'use strict'
+/*jslint node: true */
+'use strict';
 
-const path = require('path')
-const RSA = require(path.join(__dirname, '/../lib/RSA'))
+const path = require('path');
+const RSA = require(path.join(__dirname, '/../lib/RSA'));
 
 module.exports = (req, res) => {
-  const encryptedText = RSA.encrypt(req.params.text)
+  const encryptedText = RSA.encrypt(req.params.text);
 
   if (!encryptedText) {
-    res.status(500).send('Could not encrypt text')
+    res.status(500).send('Could not encrypt text');
   }
 
-  res.send(encryptedText)
-}
+  res.send(encryptedText);
+};

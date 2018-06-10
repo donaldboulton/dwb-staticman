@@ -1,13 +1,13 @@
-'use strict'
+'use strict';
 
-const convict = require('convict')
-const path = require('path')
+const convict = require('convict');
+const path = require('path');
 
 const schema = {
   akismet: {
     site: {
       doc: 'URL of an Akismet account used for spam checking.',
-      docExample: 'http://yourdomain.com',
+      docExample: 'https://donaldboulton.github.io/dwb-staticman/',
       format: String,
       default: null,
       env: 'AKISMET_SITE'
@@ -79,22 +79,22 @@ const schema = {
     default: null,
     env: 'SENTRY_DSN'
   }
-}
+};
 
-let config
+let config;
 
 try {
-  config = convict(schema)
+  config = convict(schema);
 
-  const fileName = 'config.' + config.get('env') + '.json'
+  const fileName = 'config.' + config.get('env') + '.json';
 
-  config.loadFile(path.join(__dirname, fileName))
-  config.validate()
+  config.loadFile(path.join(__dirname, fileName));
+  config.validate();
 
-  console.log('(*) Local config file loaded')
+  console.log('(*) Local config file loaded');
 } catch (e) {
 
 }
 
-module.exports = config
-module.exports.schema = schema
+module.exports = config;
+module.exports.schema = schema;
