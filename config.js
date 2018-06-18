@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-const convict = require('convict');
-const path = require('path');
+const convict = require('convict')
+const path = require('path')
 
 const schema = {
   akismet: {
@@ -38,13 +38,13 @@ const schema = {
     domain: {
       doc: 'Domain to be used with Mailgun for email notifications. Will be overridden by a `notifications.domain` parameter in the site config, if one is set.',
       format: String,
-      default: 'staticman.net',
+      default: 'https://donaldboulton.github.io/dwb-staticman/',
       env: 'EMAIL_DOMAIN'
     },
     fromAddress: {
       doc: 'Email address to send notifications from. Will be overridden by a `notifications.fromAddress` parameter in the site config, if one is set.',
       format: String,
-      default: 'noreply@staticman.net',
+      default: 'donaldboulton@gmail.com',
       env: 'EMAIL_FROM'
     }
   },
@@ -79,22 +79,22 @@ const schema = {
     default: null,
     env: 'SENTRY_DSN'
   }
-};
+}
 
-let config;
+let config
 
 try {
-  config = convict(schema);
+  config = convict(schema)
 
-  const fileName = 'config.' + config.get('env') + '.json';
+  const fileName = 'config.' + config.get('env') + '.json'
 
-  config.loadFile(path.join(__dirname, fileName));
-  config.validate();
+  config.loadFile(path.join(__dirname, fileName))
+  config.validate()
 
-  console.log('(*) Local config file loaded');
+  console.log('(*) Local config file loaded')
 } catch (e) {
 
 }
 
-module.exports = config;
-module.exports.schema = schema;
+module.exports = config
+module.exports.schema = schema
