@@ -1,6 +1,6 @@
 <img src="logo.png" width="300">
 
-# DWB Staticman [![coverage](https://img.shields.io/badge/coverage-54%25-red.svg?style=flat?style=flat-square)](https://github.com/donaldboulton/dwb-staticman) [![Build Status](https://travis-ci.org/eduardoboucas/staticman.svg?branch=master)](https://travis-ci.org/donaldboulton/dwb-staticman/) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+# Staticman [![coverage](https://img.shields.io/badge/coverage-53%25-red.svg?style=flat)](https://github.com/eduardoboucas/staticman) [![Build Status](https://travis-ci.org/eduardoboucas/staticman.svg?branch=master)](https://travis-ci.org/eduardoboucas/staticman) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 > Static sites with superpowers
 
@@ -23,7 +23,7 @@ You can download and run the Staticman API on your own infrastructure, or you ca
 
 - Clone the repository and install the dependencies via npm.
 
-  ```yaml
+  ```
   git clone git@github.com:eduardoboucas/staticman.git
   cd staticman
   npm install
@@ -31,7 +31,7 @@ You can download and run the Staticman API on your own infrastructure, or you ca
 
 - Create a development config file from the sample file.
 
-  ```yaml
+  ```
   cp config.sample.json config.development.json
   ```
 
@@ -39,7 +39,7 @@ You can download and run the Staticman API on your own infrastructure, or you ca
 
 - Start the server.
 
-  ```html
+  ```
   npm start
   ```
 
@@ -53,7 +53,7 @@ Staticman runs as a bot using a GitHub account, as opposed to accessing your acc
 
 To add Staticman to a repository, you need to add the bot as a collaborator with write access to the repository and ask the bot to accept the invite by firing a `GET` request to this URL:
 
-```html
+```
 http://your-staticman-url/v2/connect/GITHUB-USERNAME/GITHUB-REPOSITORY
 ```
 
@@ -102,5 +102,6 @@ Would you like to contribute to Staticman? That's great! Here's how:
 - [Tyne Time](https://www.tynetime.com) ([Source](https://github.com/Doocey/tyne-time-hugo))
 - [BinaryMist](https://binarymist.io/blog) ([Source](https://github.com/binarymist/BinaryMistBlog))
 - [La ruta de la cebada](https://larutadelacebada.com) ([Source](https://github.com/lasocial/larutadelacebada.github.io))
+- [Gatsby Central](https://www.gatsbycentral.com) ([Source](https://github.com/GatsbyCentral/gatsbycentral.com))
 
 Are you using Staticman? [Let us know!](https://github.com/eduardoboucas/staticman/edit/master/README.md)

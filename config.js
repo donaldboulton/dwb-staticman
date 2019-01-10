@@ -7,7 +7,7 @@ const schema = {
   akismet: {
     site: {
       doc: 'URL of an Akismet account used for spam checking.',
-      docExample: 'https://donaldboulton.github.io/dwb-staticman/',
+      docExample: 'http://yourdomain.com',
       format: String,
       default: null,
       env: 'AKISMET_SITE'
@@ -38,13 +38,13 @@ const schema = {
     domain: {
       doc: 'Domain to be used with Mailgun for email notifications. Will be overridden by a `notifications.domain` parameter in the site config, if one is set.',
       format: String,
-      default: 'https://donaldboulton.github.io/dwb-staticman/',
+      default: 'staticman.net',
       env: 'EMAIL_DOMAIN'
     },
     fromAddress: {
       doc: 'Email address to send notifications from. Will be overridden by a `notifications.fromAddress` parameter in the site config, if one is set.',
       format: String,
-      default: 'donaldboulton@gmail.com',
+      default: 'noreply@staticman.net',
       env: 'EMAIL_FROM'
     }
   },
@@ -73,11 +73,13 @@ const schema = {
     default: null,
     env: 'RSA_PRIVATE_KEY'
   },
-  sentryDSN: {
-    doc: 'Sentry DSN',
-    format: String,
-    default: null,
-    env: 'SENTRY_DSN'
+  logging: {
+    slackWebhook: {
+      doc: 'Slack webhook URL to pipe log output to',
+      format: String,
+      default: null,
+      env: 'SLACK_WEBHOOK'
+    }
   }
 }
 
