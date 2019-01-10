@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/donaldboulton/staticman.git"
+    "url": "git+https://github.com/donaldboulton/dwb-staticman.git"
   },
   "author": "Eduardo Boucas <mail@donboulton.com> (https://donboulton.com/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/donaldboulton/staticman/issues"
+    "url": "https://github.com/donaldboulton/dwb-staticman/issues"
   },
-  "homepage": "https://github.com/donaldboulton/staticman#readme",
+  "homepage": "https://github.com/donaldboulton/dwb-staticman#readme",
   "dependencies": {
     "@dadi/logger": "^1.4.1",
     "acorn": "^6.0.5",
